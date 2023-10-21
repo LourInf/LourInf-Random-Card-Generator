@@ -1,1 +1,36 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  height: 500px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card-number {
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.suit-top {
+  font-size: 100px;
+  line-height: 1;
+}
+
+.suit-bottom {
+  font-size: 100px;
+  line-height: 1.5;
+  transform: rotate(180deg);
+}
