@@ -6,7 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 window.onload = function() {
   //timer variable as global cause it's needed by both setTimer and stopTimer functions
-  let timer = "";
+  let timer;
 
   //function to display a random card
   let showRandomCard = () => {
@@ -17,7 +17,7 @@ window.onload = function() {
   //function to 1st show a random card and after that, sets a timer for displaying a new card every 10 seconds
   let setTimer = () => {
     showRandomCard();
-    setTimeout(setTimer, 10000);
+    timer = setTimeout(setTimer, 10000);
   };
 
   //function to stop the timer
